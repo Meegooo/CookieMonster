@@ -3018,7 +3018,7 @@ CM.ConfigDefault = {
 };
 CM.ConfigPrefix = 'CMConfig';
 
-CM.VersionMajor = '2.021';
+CM.VersionMajor = '2.029';
 CM.VersionMinor = '2';
 
 /*******
@@ -3241,6 +3241,7 @@ CM.Sim.CalculateGains = function() {
 	if (CM.Sim.Has('Santa\'s dominion')) mult *= 1.2;
 
 	if (CM.Sim.Has('Fortune #100')) mult *= 1.01;
+	if (CM.Sim.Has('Dragon scale')) mult *= 1.03;
 	if (CM.Sim.Has('Fortune #101')) mult *= 1.07;
 
 	var buildMult = 1;
